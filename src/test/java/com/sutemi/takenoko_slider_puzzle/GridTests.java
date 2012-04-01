@@ -48,33 +48,33 @@ public class GridTests extends TestCase {
 	public void testGridConstructorDegenerate() {
 		Grid g = new Grid(0,0);
 		
-		assertEquals(0, g.width);
-		assertEquals(0, g.height);
-		assertEquals(0, g.grid.length);
+		assertEquals(0, g.getWidth());
+		assertEquals(0, g.getHeight());
+		assertEquals(0, g.getGrid().length);
 	}
 	
 	public void testGridConstructorUnit() {
 		Grid g = new Grid(1,1);
 		
-		assertEquals(1, g.width);
-		assertEquals(1, g.height);
-		assertEquals(1, g.grid.length);
-		assertEquals(1, g.grid[0].length);
-		assertEquals("Empty", g.grid[0][0].name);
-		assertEquals(0, g.emptyx);
-		assertEquals(0, g.emptyy);
+		assertEquals(1, g.getWidth());
+		assertEquals(1, g.getHeight());
+		assertEquals(1, g.getGrid().length);
+		assertEquals(1, g.getGrid()[0].length);
+		assertEquals("Empty", g.getGrid()[0][0].name);
+		assertEquals(0, g.getEmptyx());
+		assertEquals(0, g.getEmptyy());
 	}
 	
 	public void testGridConstructorSmall() {
 		Grid g = new Grid(2,2);
 		
-		assertEquals(2, g.width);
-		assertEquals(2, g.height);
-		assertEquals(2, g.grid.length);
-		assertEquals(2, g.grid[0].length);
-		assertEquals("Empty", g.grid[0][0].name);
-		assertEquals("A", g.grid[0][1].name);
-		assertEquals("B", g.grid[1][0].name);
-		assertEquals("C", g.grid[1][1].name);
+		assertEquals(2, g.getWidth());
+		assertEquals(2, g.getHeight());
+		assertEquals(2, g.getGrid().length);
+		assertEquals(2, g.getGrid()[0].length);
+		assertEquals("Empty", g.getGrid()[0][0].name);
+		assertEquals("A", g.getGrid()[0][1].name);
+		assertEquals("B", g.getGrid()[1][0].name);
+		assertEquals("C", g.getGrid()[1][1].name);
 	}
 }

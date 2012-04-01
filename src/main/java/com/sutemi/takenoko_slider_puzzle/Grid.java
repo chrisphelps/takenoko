@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Grid {
-	public int width;
-	public int height;
-	public int emptyx;
-	public int emptyy;
-	public Tile[][] grid;
+	private int width;
+	private int height;
+	private int emptyx;
+	private int emptyy;
+	private Tile[][] grid;
 	
 	// for testing
 	protected Grid() {}
@@ -34,5 +34,25 @@ public class Grid {
 			}
 		}
 		return grid;
+	}
+	
+	protected int getEmptyx() {
+		return emptyx;
+	}
+
+	protected int getEmptyy() {
+		return emptyy;
+	}
+
+	protected Tile[][] getGrid() {
+		return grid;
+	}
+
+	public int getWidth() {
+		return width;
+	}
+
+	public int getHeight() {
+		return height;
 	}
 }
