@@ -1,0 +1,8 @@
+A project to model/solve the Meiji Chocolate takenoko and kinoko slider puzzles.
+
+These puzzles are like the classic 15 sliding tile puzzles, but with a twist:
+The tiles include parts which overlap the edges, blocking some moves.
+
+This implementation of a slider puzzle will attempt to model these puzzles and
+expand on those to achieve a solver which will be able to help manipulate the
+puzzle between given goal and result states.
