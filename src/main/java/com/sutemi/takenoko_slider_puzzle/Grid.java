@@ -6,6 +6,9 @@ import java.util.List;
 public class Grid {
 	private int width;
 	private int height;
+	
+	// for now this is a stateful grid. Probably want to 
+	// move towards a memento-like pattern
 	private int emptyx;
 	private int emptyy;
 	private Tile[][] grid;
