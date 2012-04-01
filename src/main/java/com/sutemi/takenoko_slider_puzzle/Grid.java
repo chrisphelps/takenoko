@@ -10,6 +10,9 @@ public class Grid {
 	public int emptyy;
 	public Tile[][] grid;
 	
+	// for testing
+	protected Grid() {}
+	
 	public Grid(int width, int height) {
 		this.width = width;
 		this.height = height;
@@ -22,7 +25,7 @@ public class Grid {
 		
 	}
 
-	public Tile[][] buildGrid(int height, int width, List<Tile> tiles) {
+	protected Tile[][] buildGrid(int height, int width, List<Tile> tiles) {
 		Tile[][] grid = new Tile[height][width];
 
 		for (int i = 0; i < height; i++) {
