@@ -14,29 +14,12 @@ public class Grid {
 		this.width = width;
 		this.height = height;
 		
-		List<Tile> tiles = setupTiles(height*width);
+		List<Tile> tiles = TileUtil.setupTiles(height*width);
 		this.grid = buildGrid(height, width, tiles);
 		
 		this.emptyx = 0;
 		this.emptyy = 0;
 		
-	}
-
-	protected Grid() {
-		// empty object, default values okay
-	}
-
-	public List<Tile> setupTiles(int numtiles) {
-		List<Tile> tiles = new ArrayList<Tile>(numtiles);
-		
-		tiles.add(new Tile("Empty"));
-		
-		assert numtiles < 26;
-		for(int i = 0; i < numtiles; i++) {
-			tiles.add(new Tile(Character.toString((char)('A'+i))));
-		}
-		
-		return tiles;
 	}
 
 	public Tile[][] buildGrid(int height, int width, List<Tile> tiles) {
