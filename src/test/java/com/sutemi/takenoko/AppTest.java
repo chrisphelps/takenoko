@@ -1,4 +1,4 @@
-package com.sutemi.takenoko_slider_puzzle;
+package com.sutemi.takenoko;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

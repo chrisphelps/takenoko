@@ -1,10 +1,13 @@
-package com.sutemi.takenoko_slider_puzzle;
+package com.sutemi.takenoko;
 
 import java.util.List;
 
+import com.sutemi.takenoko.Tile;
+import com.sutemi.takenoko.TileUtil;
+
 import junit.framework.TestCase;
 
-public class SetupTileTests extends TestCase {
+public class SetupTileTest extends TestCase {
 
 	public void testSetupDegenrateCase() {
 		List<Tile> setupTiles = TileUtil.setupTiles(0);

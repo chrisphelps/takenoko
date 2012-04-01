@@ -1,8 +1,10 @@
-package com.sutemi.takenoko_slider_puzzle;
+package com.sutemi.takenoko;
+
+import com.sutemi.takenoko.Move;
 
 import junit.framework.TestCase;
 
-public class MoveTests extends TestCase {
+public class MoveTest extends TestCase {
 
 	public void testMoveCoordinatesMustBePositive() {
 		try {

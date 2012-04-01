@@ -1,11 +1,14 @@
-package com.sutemi.takenoko_slider_puzzle;
+package com.sutemi.takenoko;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import com.sutemi.takenoko.Grid;
+import com.sutemi.takenoko.Tile;
+
 import junit.framework.TestCase;
 
-public class GridTests extends TestCase {
+public class GridTest extends TestCase {
 	
 	public void testBuildUnitGrid()
     {

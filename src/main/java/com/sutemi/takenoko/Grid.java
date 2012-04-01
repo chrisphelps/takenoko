@@ -1,4 +1,4 @@
-package com.sutemi.takenoko_slider_puzzle;
+package com.sutemi.takenoko;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,6 +37,10 @@ public class Grid {
 			}
 		}
 		return grid;
+	}
+	
+	public List<Move> getAvailableMoves() {
+		return null;
 	}
 	
 	protected int getEmptyx() {

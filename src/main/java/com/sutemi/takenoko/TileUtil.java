@@ -1,4 +1,4 @@
-package com.sutemi.takenoko_slider_puzzle;
+package com.sutemi.takenoko;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +15,7 @@ public class TileUtil {
 		tiles.add(new Tile("Empty"));
 		
 		// for now only work with single letter space
-		assert numtiles < 26;
+		//assert numtiles < 26;
 		if (numtiles > 25) {
 			throw new IllegalArgumentException("Limit exceeded");
 		}

@@ -1,4 +1,4 @@
-package com.sutemi.takenoko_slider_puzzle;
+package com.sutemi.takenoko;
 
 public class Move {
 	private int sourcex;
